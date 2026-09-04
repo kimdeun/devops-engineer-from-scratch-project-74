@@ -1,0 +1,23 @@
+# Exclude everything from the build context by default.
+*
+
+# Dockerfiles are used by development and production builds.
+!Dockerfile
+!Dockerfile.production
+
+# Production sources.
+!app/
+!app/**
+
+# Local, generated and repository-only application files.
+node_modules
+app/node_modules
+app/.env
+app/.git
+app/.github
+app/.dockerignore
+app/.gitignore
+app/database
+app/dist
+app/Dockerfile
+app/README.md
